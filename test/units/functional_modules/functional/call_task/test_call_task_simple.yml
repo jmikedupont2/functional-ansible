@@ -1,0 +1,21 @@
+# playbook to show how the call_task and template_tasks
+
+- hosts: localhost
+  vars:
+    input_data:
+      - name: peter
+      - name: paul
+  
+  template_tasks:
+    simple_function:
+      debug:
+        msg : 'hello world {{name}}'
+        verbosity : 3
+
+  tasks:
+    
+  - name: call_simple_function
+    call_task:
+      name : "simple_function"
+      tags: functional
+      with_items: input_data

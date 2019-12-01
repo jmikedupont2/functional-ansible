@@ -1,0 +1,4 @@
+# example of what the task would look like if expanded
+- name: simple_function_external
+  debug:
+    msg : 'hello world from included {{item}}'
