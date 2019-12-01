@@ -1,0 +1,3 @@
+pytoolz
+-e https://jmikedupont2/ansible.git@feature/dataloader_factory#egg=ansible
+
