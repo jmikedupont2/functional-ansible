@@ -17,9 +17,10 @@ The template tasks are tested here,
 `test/units/functional_modules/functional/call_task/test_call_task_simple.yml`
 there is a new section added called template_tasks, this section is used for call_task. The variables all need to be defined in the file itself for this version.
 
-The 
 ## We want to implement these functions:
 
 * yq: run jq/yq on lists of data
 * cons : construct new variables in an elegant manner, to be called after the variables are all loaded.
+* generate deb, rpm, setup, wheel distribution for a playbook
+* refactor an existing playbook or role into one following best practices
 
